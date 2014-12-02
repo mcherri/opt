@@ -25,23 +25,26 @@ Installation
 4. Still in developer tab, import OPT code as following:
 
  1. Click Visual Basic.
- 2. Right-click Microsoft Outlook Objects, Import File..., then select
-    ThisOutlookSession.bas from local directory. Click open.
- 3. Right-click Modules, Import File..., then select FillCalendar.bas from
-    local directory. Click open.
- 4. Right-click Class Modules, Import File..., then select ItemEvents.bas from
-    local directory. Click open.
- 5. Repeat step 4, for PrayerTime.bas.
+ 2. Expand Microsoft Outlook Objects, double click ThisOutlookSession, and
+    copy and paste ThisOutlookSession.bas into the newly opened code window.
+ 3. From the menu, click Insert -> Module. In the module properties, change
+    the module name to FillCalendar. Copy and paste FillCalendar.bas into the
+    newly opened code window.
+ 4. From the menu click Insert -> Class Module. In the class module properties,
+    change the class module name to ItemEvents. Copy and paste ItemEvents.bas
+    into the newly opened code window.
+ 5. Repeat step iv, for PrayerTime.bas.
  6. Double click on FillCalendar to open it. Adjust the code shown blow to reflect
     your country and time zone. Please note that DayLightSaving is not currently
     used.
-  ```vba
-  ' Edit these to reflect your country
-  Public Const TimeZone As Double = 3#
-  Public Const DayLightSaving As Double = 0
-  Public Const Latitude As Double = 30.0566
-  Public Const Longitude As Double = 31.2262
-  ```
+
+    ```vba
+    ' Edit these to reflect your country
+    Public Const TimeZone As Double = 3#
+    Public Const DayLightSaving As Double = 0
+    Public Const Latitude As Double = 30.0566
+    Public Const Longitude As Double = 31.2262
+    ```
  7. Do not forget to save by clicking the save icon.
  8. Close Microsoft Visual Basic for Applications window.
  9. Restart Outlook.
