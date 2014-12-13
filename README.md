@@ -62,7 +62,10 @@ Installation
     change the class module name to ItemEvents. Copy and paste ItemEvents.bas
     into the newly opened code window.
  5. Repeat step iv, for PrayerTime.bas.
- 6. Double click on FillCalendar to open it. Adjust the code shown blow to reflect
+ 6. The Outlook project should look like this:
+    
+    ![Outlook project screenshot](https://raw.githubusercontent.com/mcherri/opt/master/outlook-project-shot.png)
+ 7. Double click on FillCalendar to open it. Adjust the code shown blow to reflect
     your country and time zone. Please note that DayLightSaving is not currently
     used.
 
@@ -73,11 +76,11 @@ Installation
     Public Const Latitude As Double = 30.0566
     Public Const Longitude As Double = 31.2262
     ```
- 7. Do not forget to save by clicking the save icon.
- 8. Close Microsoft Visual Basic for Applications window.
- 9. Restart Outlook.
- 10. At startup, Outlook will ask to enable macros. Grant it.
- 11. Switch to Calendar view, to verify the new green prayer times meetings'.
+ 8. Do not forget to save by clicking the save icon.
+ 9. Close Microsoft Visual Basic for Applications window.
+ 10. Restart Outlook.
+ 11. At startup, Outlook will ask to enable macros. Grant it.
+ 12. Switch to Calendar view, to verify the new green prayer times meetings'.
 
 ### Re-enable Full Macros Security
 
